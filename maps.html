@@ -1,0 +1,127 @@
+  <!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #map {
+      height: 600px;
+      width: 100%;
+    }
+  </style>
+  <title>Intrepid</title>
+
+
+    <!--Stylesheets-->
+    <link rel="shortcut icon" href="https://cdn3.iconfinder.com/data/icons/war-6/512/b135_7-512.png" type="image/x-icon">
+        <title>The Intrepid</title>
+            <script src="https://code.jquery.com/jquery-3.1.0.js"></script>        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+            <link rel="stylesheet" href="style.css" type="text/css" />
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+            <script type="text/javascript" src="script.js"></script>
+            <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+  
+  <nav class="navbar">
+            <div class="container-fluid">
+              <div class = "row">
+                <div class = "col-xs-12" id = "centerNav">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="index.html" class = "navbarTitle">The Intrepid</a>
+                </div>
+                <ul class="nav navbar-nav menuNav">
+                    <!-- navbar links here -->
+                    <li class = "active"><a class = "navbarText" href="index.html">Home</a></li>
+                    <li><a class = "navbarText" href="gallery.html">Gallery</a></li>
+                    <li><a class = "navbarText" href="maps.html">Map</a></li>
+                    <li><a class = "navbarText" href="about.html">About</a></li>
+                    <li><a class = "navbarText" href="quiz/quiz.html">Quiz!</a></li>
+                </ul>
+            </div>
+          </div>
+        </nav>
+  
+  
+  
+
+ <center><h1 class="travel">The Intrepid's Travel</h1></center>
+  <div id="map"></div>
+  <script>
+    function initMap() {
+      var mapCenter = {lat: 34.072454, lng: -8.490281};
+
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 2,
+        center: mapCenter,
+      });
+
+      var locations = [
+        { name: 'Kingston', year: 1963, lat: 18.149049, lng: -77.414069 },
+        { name: 'Guantanamo', year: 1957, lat: 20.143452, lng: -75.193406 },
+        { name: 'Charlotte Amalie', year: 1964, lat: 18.3419, lng: -64.929053 },
+        { name: 'Virquez', year: 1962, lat: 18.138365, lng: -65.441452 },
+        { name: 'Santo Domingo', year: 1960, lat: 18.488191, lng: -69.936887 },
+        { name: 'Port of Spain', year: 1943, lat: 10.666856, lng: -61.503740 },
+        { name: 'Bridgetown', year: 1958, lat: 13.095792, lng: -59.614563 },
+        { name: 'Hamilton', year: 1963, lat: 32.295668, lng: -64.783802 },
+        { name: 'Quebec City', year: 1962, lat: 47.420238, lng: -71.202326 },
+        { name: 'Greenock', year: 1971, lat: 55.958867, lng: -4.772976 },
+        { name: 'Oslo', year: 1958, lat: 59.915472, lng: 10.750091 },
+        { name: 'Kiel', year: 1971, lat: 54.327319, lng: 10.114683 },
+        { name: 'Copenhagen', year: 1971, lat: 55.677055, lng: 12.589016 },
+        { name: 'Rotterdam', year: 1958, lat: 51.895698, lng: 4.474606 },
+        { name: 'Plymouth', year: 1971, lat: 50.370032, lng: -4.137978 },
+        { name: 'Belfast', year: 1957, lat: 54.603550, lng: -5.924580 },
+        { name: 'Cannes', year: 1955, lat: 43.549694, lng: 6.982920 },
+        { name: 'Barcelona', year: 1959, lat: 41.383436, lng: 2.186531 },
+        { name: 'Naples', year: 1955, lat: 40.846130, lng: 14.267468 },
+        { name: 'Istanbul', year: 1955, lat: 41.004982, lng: 28.951716 },
+        { name: 'Athens', year: 1955, lat: 37.940351, lng: 23.682041 },
+        { name: 'Beirut', year: 1960, lat: 33.450335, lng: 35.449350 },
+        { name: 'Gihatter', year: 1955, lat: 36.154873, lng: -5.349696 },
+        { name: 'Lisbon', year: 1958, lat: 38.700647, lng: -9.166115 },
+        { name: 'Rotterdam', year: 1958, lat: 51.912614, lng: 4.476124 },
+        { name: 'Yokosuka', year: 1945, lat: 35.217033, lng: 139.621538 },
+        { name: 'Withi', year: 1944, lat: 7.522472, lng: 134.582126 },
+        { name: 'Subic Bay', year: 1966, lat: 14.800718, lng: 120.239111 },
+        { name: 'Singapore', year: 1968, lat: 1.347174, lng: 103.880337 },
+        { name: 'Hong Kong', year: 1966, lat: 22.308425, lng: 114.166679 },
+        { name: 'Sydney', year: 1969, lat: -33.861884, lng: 151.211322 },
+        { name: 'Wellington', year: 1969, lat: -41.276611, lng: 174.788123 },
+      ]
+
+      for (var i = 0; i < locations.length; i++) {
+        var loc = locations[i];
+        var name = loc.name;
+        var lat = loc.lat;
+        var lng = loc.lng;
+        var year = loc.year;
+
+        makeMarker(map, lat, lng, year, name);
+      }
+
+    }
+
+    function makeMarker(map, lat, lng, year, name) {
+      var marker = new google.maps.Marker({
+        position: { lat: lat, lng: lng },
+        map: map,
+        icon: 'http://2.gravatar.com/avatar/8651e791cd6fec9bdd4bff9cb69d9863?s=40&d=mm&r=g',
+        label: (name + ' ' + year),
+      });
+    }
+
+  </script>
+
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDyEeJrimdZCOeqZsWuJL1QpMdG7V5JoQ0&callback=initMap">
+  </script>
+
+
+
+</body>
+
+</html>

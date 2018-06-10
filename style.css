@@ -8,32 +8,6 @@
 body {
     background-color:#bababa;
 }
-.wilson {
-    font-family: 'Open Sans', sans-serif;
-  color: blue;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 45px;
-  font-weight: 800;
-  letter-spacing: -3px;
-  line-height: 1;
-  text-shadow: white 3px 2px 0;
-  position: relative;
-  text-align:center;
-}
-.wilson:hover{
-    font-family: 'Open Sans', sans-serif;
-  color: white;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 45px;
-  font-weight: 800;
-  letter-spacing: -3px;
-  line-height: 1;
-  text-shadow: blue 3px 2px 0;
-  position: relative;
-  text-align:center;
-}
 
 .about{
     text-align:center;
@@ -42,153 +16,10 @@ body {
 .background{
     text-align:center;
 }
-
-.Edwin {
-  text-align:center;
-  font-family: 'Open Sans', sans-serif;
-  color: purple;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 45px;
-  font-weight: 800;
-  letter-spacing: -3px;
-  line-height: 1;
-  text-shadow: pink 3px 2px 0;
-  position: relative;
-  text-align:center;
-    
-}
-.Edwin:hover{
-  text-align:center;
-  font-family: 'Open Sans', sans-serif;
-  color: pink;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 45px;
-  font-weight: 800;
-  letter-spacing: -3px;
-  line-height: 1;
-  text-shadow: purple 3px 2px 0;
-  position: relative;
-  text-align:center;
-}
-.Akeeme{
-  text-align:center;
-  font-family: 'Open Sans', sans-serif;
-  color: red;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 45px;
-  font-weight: 800;
-  letter-spacing: -3px;
-  line-height: 1;
-  text-shadow: white 3px 2px 0;
-  position: relative;
-  text-align:center;
-}
-.Akeeme:hover{
-    text-align:center;
-  font-family: 'Open Sans', sans-serif;
-  color: white;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 45px;
-  font-weight: 800;
-  letter-spacing: -3px;
-  line-height: 1;
-  text-shadow: red 3px 2px 0;
-  position: relative;
-  text-align:center;
-}
-
-.damare{
-    text-align:center;
-  font-family: 'Open Sans', sans-serif;
-  color: black;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 45px;
-  font-weight: 800;
-  letter-spacing: -3px;
-  line-height: 1;
-  text-shadow: #45165e 3px 2px 0;
-  position: relative;
-  text-align:center;
-}
-.damare:hover{
-    text-align:center;
-  font-family: 'Open Sans', sans-serif;
-  color: #45165e;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 45px;
-  font-weight: 800;
-  letter-spacing: -3px;
-  line-height: 1;
-  text-shadow: black 3px 2px 0;
-  position: relative;
-  text-align:center;
-}
-.Michal{
-    text-align:center;
-  font-family: 'Open Sans', sans-serif;
-  color: green;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 45px;
-  font-weight: 800;
-  letter-spacing: -3px;
-  line-height: 1;
-  text-shadow: black 3px 2px 0;
-  position: relative;
-  text-align:center;
-}
-.Michal:hover{
-    text-align:center;
-  font-family: 'Open Sans', sans-serif;
-  color: black;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 45px;
-  font-weight: 800;
-  letter-spacing: -3px;
-  line-height: 1;
-  text-shadow: green 3px 2px 0;
-  position: relative;
-  text-align:center;
-}
-.david{
-    text-align:center;
-  font-family: 'Open Sans', sans-serif;
-  color: black;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 45px;
-  font-weight: 800;
-  letter-spacing: -3px;
-  line-height: 1;
-  text-shadow: white 3px 2px 0;
-  position: relative;
-  text-align:center;
-}
-.david:hover{
-    text-align:center;
-  font-family: 'Open Sans', sans-serif;
-  color: white;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 45px;
-  font-weight: 800;
-  letter-spacing: -3px;
-  line-height: 1;
-  text-shadow: black 3px 2px 0;
-  position: relative;
-  text-align:center;
-}
 /*Navbar Entities*/
 .navbar-brand{
   font-family: 'Open Sans', sans-serif;
-  color: #555;
+  color: blue;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 45px;
@@ -226,9 +57,11 @@ body {
 
 nav{
     height: 135px;
-    background-color: #808080;
+    background-color: lightblue;
 }
-
+body{
+    background-color:lightblue;
+}
 .navbarText{
     color: white;
     font-size: 26px;
@@ -292,6 +125,7 @@ section.module.parallax {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  background-color:lightblue;
 }
 
 section.module.parallax h1 {
@@ -320,12 +154,12 @@ section.module.parallax h1 {
     font-family: "Helvetica", serif;
 }
 section.module.parallax-1 {
-  background-image: url("pictures/intrepid.jpg");
+  background-image: url("http://teambeyond.net/wp-content/uploads/2015/02/cloud9-cbafe6c4695d4754ad198e9d08a2af03.jpg");
 }
 section.module.parallax-2 {
  text-shadow: 1px 1px #000000;
   font-size:20px;
-  background-image: url("pictures/ussintrepid.jpg");
+  background-image: url("https://www.earnthenecklace.com/wp-content/uploads/2019/05/Tyler-Ninja-Blevins-laugh.jpg");
   font-family:'arvo';
   text-align:center;
   color:white;
@@ -333,7 +167,7 @@ section.module.parallax-2 {
   line-height:2;
 }
 section.module.parallax-3 {
-  background-image: url("pictures/AircraftIntrepid.jpg");
+  background-image: url("https://www.earnthenecklace.com/wp-content/uploads/2018/03/Tyler-Blevins-Wiki.jpg");
   text-shadow:1px 1px #000000;  
     
 }
@@ -357,7 +191,7 @@ section.module.parallax-3 {
     font-family: "italiana", serif;
 }
 .cap{
-    color: #469932;
+    color: #blue;
     font-family: "italiana", serif;
     font-weight: 900;
     font-size: 30px;
@@ -439,37 +273,3 @@ footer { background-color: #808080; min-height:350px; font-family: 'Helvetica', 
  .bottom_ul li:after { content:"/"; color:#FFF; margin-right:8px; margin-left:8px;}
  .bottom_ul li a { color:#FFF;  font-size:12px;}
  
- /*<!------------------------------Footer css for icons-------------------------------->*/
-body {
-    font-family: 'Helvetica', serif;
-    -webkit-font-smoothing: antialiased;
-}
-
-footer .col-sm-8 {
-display: flex;
-justify-content: flex-end;
-}
-
-footer ul {
-list-style: none;
-}
-
-footer li img {
-width: 32px;
-height: 32px;
-}
-icon {
-    height:;
-}
-#shipinfo{
-    font-family: "Times New Roman", Times, serif;
-    font-size: 20px;
-    font-weight: bolder;
-    color: white;
-}
-
-#shipinfo p {
-    text-shadow:#000 1px 0 10px;
-
-}
-/*footer css end*/
